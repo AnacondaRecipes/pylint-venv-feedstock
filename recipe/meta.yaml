@@ -36,6 +36,10 @@ about:
   summary: pylint-venv provides a Pylint init-hook to use the same Pylint installation with different virtual environments.
   license: MIT
   license_file: LICENSE.txt
+  doc_url: https://github.com/jgosmann/pylint-venv/
+
+
+
 
 extra:
   recipe-maintainers:
