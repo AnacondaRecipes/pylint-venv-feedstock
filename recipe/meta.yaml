@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pylint-venv-{{ version }}.tar.gz
-  sha256: 3594955502fdee83c98bfcc8c14cd615e6c7c3608aea525df84853ce79f296bf
+  url: https://pypi.io/packages/source/{{ name[0] }}/pylint_venv/pylint_venv-{{ version }}.tar.gz
+  sha256: df12a17fca39a94acc1c9a0f1dcf68141e90fe685569d78c046695c67c4e55fa
 
 build:
   number: 0
   skip: True # [py<37]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
